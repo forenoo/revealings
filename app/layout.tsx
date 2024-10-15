@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
+import { SmoothScroll } from "@/components/layout";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -21,11 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${manrope.variable} antialiased max-w-[1440px] mx-auto`}
-      >
+      <body className={`${manrope.variable} font-manrope antialiased`}>
         <Toaster />
-        {children}
+        <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>
   );

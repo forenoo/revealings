@@ -10,22 +10,24 @@ import {
   Testimoni,
   CallToAction,
   Footer,
-} from "@/components/section";
+} from "@/components/layout";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar className="maxContainer" />
       <Hero />
-      <About />
-      <Purpose />
-      <Benefit />
-      <Destination />
-      <TrustedCarousel />
-      <Rating />
-      <Testimoni />
-      <CallToAction />
-      <Footer />
+      <main className="maxContainer maxPadding">
+        <About />
+        <Purpose />
+        <Benefit />
+        <Destination />
+        <TrustedCarousel />
+        <Rating />
+        <Testimoni />
+        <CallToAction />
+        <Footer />
+      </main>
     </>
   );
 }
