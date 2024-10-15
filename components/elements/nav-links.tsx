@@ -7,10 +7,12 @@ export default function NavLink({
   className,
   children,
   href,
+  onClick,
 }: {
   className?: string;
   children: React.ReactNode;
   href: string;
+  onClick?: () => void;
 }) {
   return (
     <Button
@@ -19,6 +21,7 @@ export default function NavLink({
         "text-white font-semibold hover:bg-white/20 hover:text-white",
         className
       )}
+      onClick={onClick}
     >
       <Link href={href}>{children}</Link>
     </Button>
