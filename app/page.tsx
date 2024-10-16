@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Navbar,
   Hero,
@@ -17,16 +19,14 @@ export default function Home() {
     <>
       <Navbar className="maxContainer" />
       <Hero />
-      <main className="maxContainer maxPadding">
-        <About />
-        <Purpose />
-        <Benefit />
-        <Destination />
-        <TrustedCarousel />
-        <Rating />
-        <Testimoni />
-        <CallToAction />
-      </main>
+      <About />
+      <Purpose />
+      <Benefit />
+      <Destination />
+      <TrustedCarousel />
+      <Rating />
+      <Testimoni />
+      <CallToAction />
       <Footer />
     </>
   );

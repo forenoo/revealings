@@ -19,13 +19,13 @@ export default function SwitchLanguage({
     <Button
       variant="ghost"
       className={cn(
-        "flex items-center gap-3 bg-white/20 hover:bg-white/30 rounded-full w-fit hover:text-white h-fit p-2",
-        className
+        "flex h-fit w-fit items-center gap-3 rounded-full bg-white/20 p-2 hover:bg-white/30 hover:text-white",
+        className,
       )}
       onClick={onClick}
     >
       <CiGlobe strokeWidth={1} size={22} />
-      <p className="font-semibold text-[14px] uppercase">{lang}</p>
+      <p className="text-[14px] font-semibold uppercase">{lang}</p>
     </Button>
   );
 }

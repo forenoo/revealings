@@ -44,6 +44,31 @@ export const navLinksEnglish = [
   },
 ] as const;
 
+export const heroIndonesia = {
+  title:
+    "Temukan Surga Tersembunyi di Raja Ampat. Petualangan dan Keindahan Alam yang Menyatu",
+  description:
+    "Di sini, Anda bisa menemukan ratusan spesies ikan dan terumbu karang, menjadikan Raja Ampat sebagai destinasi impian bagi pecinta alam.",
+};
+
+export const heroEnglish = {
+  title:
+    "Find the Hidden Paradise in Raja Ampat. Explore place and Enjoy the Beauty of the Ocean",
+  description:
+    "Here, you can find hundreds of species of fish and coral reefs, making Raja Ampat a dream destination for nature lovers.",
+};
+
+export const aboutHeaderIndonesia = {
+  title: "Surga di Ujung Timur Indonesia",
+  description:
+    "Temukan ratusan spesies ikan dan terumbu karang, menjadikan Raja Ampat sebagai destinasi impian bagi penyelam dan pecinta alam.",
+};
+
+export const aboutHeaderEnglish = {
+  title: "Paradise at the Eastern End of Indonesia",
+  description:
+    "Discover hundreds of species of fish and coral reefs, making Raja Ampat a dream destination for divers and nature lovers.",
+};
 export const aboutImageCardIndonesia = [
   {
     id: 1,
@@ -79,24 +104,6 @@ export const aboutImageCardIndonesia = [
     description:
       "Langit cerah dengan awan putih yang berarak menambah keindahan pemandangan. Di kejauhan, terlihat perbukitan dan pegunungan hijau",
     image: "/image-5.jpg",
-  },
-] as const;
-
-export const heroIndonesia = [
-  {
-    title:
-      "Temukan Surga Tersembunyi di Raja Ampat. Petualangan dan Keindahan Alam yang Menyatu",
-    description:
-      "Di sini, Anda bisa menemukan ratusan spesies ikan dan terumbu karang, menjadikan Raja Ampat sebagai destinasi impian bagi pecinta alam.",
-  },
-] as const;
-
-export const heroEnglish = [
-  {
-    title:
-      "Find the Hidden Paradise in Raja Ampat. Journey and Enjoy the Beauty of the Ocean",
-    description:
-      "Here, you can find hundreds of fish species and waterfowl, and make Raja Ampat your destination for adventure and beauty.",
   },
 ] as const;
 
@@ -246,25 +253,25 @@ export const menarikWisatawanIndonesia = [
         id: 1,
         name: "Piaynemo",
         rating: 4.9,
-        image: "/piaynemo-image.jpg",
+        image: "/playnemo.jpg",
       },
       {
         id: 2,
         name: "Pulau Wayag",
         rating: 4.8,
-        image: "/pulau-wayag-image.jpg",
+        image: "/wayag.jpg",
       },
       {
         id: 3,
         name: "Pulau Misool",
         rating: 4.7,
-        image: "/pulau-misool-image.jpg",
+        image: "/misool.jpg",
       },
       {
         id: 4,
         name: "Cape Kri",
         rating: 4.7,
-        image: "/cape-kri-image.jpg",
+        image: "/cape-kri.jpg",
       },
     ],
     reviews: [

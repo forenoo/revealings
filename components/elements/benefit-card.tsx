@@ -12,7 +12,7 @@ export default function BenefitCard({
   description,
 }: BenefitCardProps) {
   return (
-    <div className="flex flex-col gap-[20px] border-x border-accent/20 px-[25px] text-primary">
+    <div className="flex flex-col gap-[20px] border-x border-accent/10 px-[25px] text-primary">
       <header className="space-y-1">
         <span className="text-[16px] font-bold text-accent md:text-[20px]">
           {number}
