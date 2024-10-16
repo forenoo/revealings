@@ -82,21 +82,23 @@ export const aboutImageCardIndonesia = [
   },
 ] as const;
 
-
 export const heroIndonesia = [
   {
-    title: "Temukan Surga Tersembunyi di Raja Ampat. Petualangan dan Keindahan Alam yang Menyatu",
-    description: "Di sini, Anda bisa menemukan ratusan spesies ikan dan terumbu karang, menjadikan Raja Ampat sebagai destinasi impian bagi pecinta alam.",
+    title:
+      "Temukan Surga Tersembunyi di Raja Ampat. Petualangan dan Keindahan Alam yang Menyatu",
+    description:
+      "Di sini, Anda bisa menemukan ratusan spesies ikan dan terumbu karang, menjadikan Raja Ampat sebagai destinasi impian bagi pecinta alam.",
   },
 ] as const;
 
 export const heroEnglish = [
   {
-    title: "Find the Hidden Paradise in Raja Ampat. Journey and Enjoy the Beauty of the Ocean",
-    description: "Here, you can find hundreds of fish species and waterfowl, and make Raja Ampat your destination for adventure and beauty.",
+    title:
+      "Find the Hidden Paradise in Raja Ampat. Journey and Enjoy the Beauty of the Ocean",
+    description:
+      "Here, you can find hundreds of fish species and waterfowl, and make Raja Ampat your destination for adventure and beauty.",
   },
 ] as const;
-
 
 export const aboutImageCardEnglish = [
   {
@@ -139,14 +141,16 @@ export const aboutImageCardEnglish = [
 export const mengenalKamiIndonesia = [
   {
     title: "Mengenal Kami dan Raja Ampat",
-    description: "Revealings hadir untuk memberikan informasi lengkap dan terpercaya tentang keindahan Raja Ampat, destinasi wisata yang kaya akan alam dan keanekaragaman hayati. Kami membantu wisatawan mengenal keunikan pulau, pantai, dan spot diving."
+    description:
+      "Revealings hadir untuk memberikan informasi lengkap dan terpercaya tentang keindahan Raja Ampat, destinasi wisata yang kaya akan alam dan keanekaragaman hayati. Kami membantu wisatawan mengenal keunikan pulau, pantai, dan spot diving.",
   },
 ] as const;
 
 export const mengenalKamiEnglish = [
   {
     title: "Getting to Know Us and Raja Ampat",
-    description: "Revealings is here to provide complete and reliable information about the beauty of Raja Ampat, a tourist destination rich in nature and biodiversity. We help travelers get to know the uniqueness of the islands, beaches and diving spots."
+    description:
+      "Revealings is here to provide complete and reliable information about the beauty of Raja Ampat, a tourist destination rich in nature and biodiversity. We help travelers get to know the uniqueness of the islands, beaches and diving spots.",
   },
 ] as const;
 
@@ -154,22 +158,26 @@ export const kamiSediakanIndonesia = [
   {
     id: 1,
     title: "Informasi Berguna Tentang Raja Ampat",
-    description: "Kami menyediakan informasi mendetail tentang setiap pulau, pantai, dan spot diving di Raja Ampat. Mulai dari keindahan alam hingga aktivitas yang bisa dilakukan.",
+    description:
+      "Kami menyediakan informasi mendetail tentang setiap pulau, pantai, dan spot diving di Raja Ampat. Mulai dari keindahan alam hingga aktivitas yang bisa dilakukan",
   },
   {
     id: 2,
     title: "Panduan Destinasi Yang Lengkap",
-    description: "Dapatkan panduan dan langkah demi langkah tentang bagaimana menjelajahi Raja Ampat, kapan waktu terbaik untuk mengunjungi, serta trik agar perjalanan Anda lancar dan aman.",
+    description:
+      "Dapatkan panduan dan langkah demi langkah tentang bagaimana menuju Raja Ampat, kapan waktu terbaik berkunjung, serta tips dan trik agar perjalanan Anda lancar dan aman.",
   },
   {
     id: 3,
     title: "Foto dan Video Yang Menakjubkan",
-    description: "Galeri visual yang memanjakan mata Anda dengan keindahan alam Raja Ampat, membantu Anda melihat dan merasakan pesonanya saat sebelum berangkat.",
+    description:
+      "Galeri visual yang memanjakan mata Anda dengan keindahan alam Raja Ampat, membantu Anda Melihat dan merasakan pesonanya saat sebelum berangkat.",
   },
   {
     id: 4,
     title: "Inspirasi dan Cerita Wisatawan",
-    description: "Pengalaman nyata dari wisatawan lain yang telah mengunjungi Raja Ampat. Kisah inspiratif ini sebagai referensi tambahan untuk membuat perjalanan Anda lebih berkesan.",
+    description:
+      "Pengalaman nyata dari wisatawan lain yang telah mengunjungi Raja Ampat. Kisah inspiratif ini sebuah tips tambahan untuk membuat perjalanan Anda lebih berkesan.",
   },
 ] as const;
 
@@ -177,36 +185,42 @@ export const kamiSediakanEnglish = [
   {
     id: 1,
     title: "Useful Information About Raja Ampat",
-    description: "We provide useful information about every island, beach and diving spot in Raja Ampat. From the beauty of the world to activities that can be done.",
+    description:
+      "We provide useful information about every island, beach and diving spot in Raja Ampat. From the beauty of the world to activities that can be done.",
   },
   {
     id: 2,
     title: "Tour Guide and Steps to Walk through Raja Ampat",
-    description: "Get a step-by-step guide on how to get to Raja Ampat, when to visit, and tips and tricks to make your trip smooth and safe.",
+    description:
+      "Get a step-by-step guide on how to get to Raja Ampat, when to visit, and tips and tricks to make your trip smooth and safe.",
   },
   {
     id: 3,
     title: "Amazing Photos and Videos",
-    description: "A visual gallery that feasts your eyes on the natural beauty of Raja Ampat, helping you see and feel its charm before you set off.",
+    description:
+      "A visual gallery that feasts your eyes on the natural beauty of Raja Ampat, helping you see and feel its charm before you set off.",
   },
   {
-    id : 4,
+    id: 4,
     title: "Inspirational and Travel Stories",
-    description: "A truly experience from another traveler who has visited Raja Ampat. This is an inspiration to make your trip more interesting.",
+    description:
+      "A truly experience from another traveler who has visited Raja Ampat. This is an inspiration to make your trip more interesting.",
   },
 ] as const;
 
 export const destinasiTerpopulerIndonesia = [
   {
     title: "Destinasi Terpopuler ",
-    description: "Temukan keindahan alam di bawah laut Raja Ampat dan kekayaan ekosistem laut yang sangat menakjubkan",
+    description:
+      "Temukan keindahan alam di bawah laut Raja Ampat dan kekayaan ekosistem laut yang sangat menakjubkan",
   },
 ] as const;
 
 export const destinasiTerpopulerEnglish = [
   {
     title: "Popular Destinations",
-    description: "Discover the beauty of the world beneath the sea Raja Ampat and the rich ecosystem of the sea that is so amazing",
+    description:
+      "Discover the beauty of the world beneath the sea Raja Ampat and the rich ecosystem of the sea that is so amazing",
   },
 ] as const;
 
@@ -225,109 +239,113 @@ export const DipercayaEnglish = [
 export const menarikWisatawanIndonesia = [
   {
     title: "Menarik Banyak Wisatawan Dari Seluruh Dunia",
-  description: "Raja Ampat menawarkan pengalaman luar biasa bagi wisatawan dengan kekayaan terumbu karang dan kehidupan laut yang spektakuler",
-  attractions: [
-    {
-      id: 1,
-      name: "Piaynemo",
-      rating: 4.9,
-      image: "/piaynemo-image.jpg"
-    },
-    {
-      id: 2,
-      name: "Pulau Wayag",
-      rating: 4.8,
-      image: "/pulau-wayag-image.jpg"
-    },
-    {
-      id: 3,
-      name: "Pulau Misool",
-      rating: 4.7,
-      image: "/pulau-misool-image.jpg"
-    },
-    {
-      id: 4,
-      name: "Cape Kri",
-      rating: 4.7,
-      image: "/cape-kri-image.jpg"
-    }
-  ],
-  reviews: [
-    {
-      name: "Symasul Sampara",
-      from: "Makassar, Indonesia",
-      comment: "“Keindahan bawah laut Raja Ampat sulit digambarkan dengan kata-kata. Meskipun hanya satu hari perjalanan dengan Misool Trip, namun pengalamannya luar biasa. Mulai dari warna hijau tosca di Pianemo, snorkeling di Sawendarek, hingga warna-warna terumbu karang yang menenangkan di Yenbuba dan Pasir Timbul.”",
-    },
-  ],
-},
-] as const;
-
-
-export const menarikWisatawanEnglish = [
-  {
-    title: "Attracts Many Travelers From Around the World",
-    description: "Raja Ampat offers an extraordinary experience for travelers with its rich coral reefs and spectacular marine life.",
+    description:
+      "Raja Ampat menawarkan pengalaman luar biasa bagi wisatawan dengan kekayaan terumbu karang dan kehidupan laut yang spektakuler",
     attractions: [
       {
         id: 1,
         name: "Piaynemo",
         rating: 4.9,
-        image: "/piaynemo-image.jpg"
+        image: "/piaynemo-image.jpg",
       },
       {
         id: 2,
-        name: "Wayag Island",
+        name: "Pulau Wayag",
         rating: 4.8,
-        image: "/pulau-wayag-image.jpg"
+        image: "/pulau-wayag-image.jpg",
       },
       {
         id: 3,
-        name: "Misool Island",
+        name: "Pulau Misool",
         rating: 4.7,
-        image: "/pulau-misool-image.jpg"
+        image: "/pulau-misool-image.jpg",
       },
       {
         id: 4,
         name: "Cape Kri",
         rating: 4.7,
-        image: "/cape-kri-image.jpg"
-      }
+        image: "/cape-kri-image.jpg",
+      },
+    ],
+    reviews: [
+      {
+        name: "Symasul Sampara",
+        from: "Makassar, Indonesia",
+        comment:
+          "“Keindahan bawah laut Raja Ampat sulit digambarkan dengan kata-kata. Meskipun hanya satu hari perjalanan dengan Misool Trip, namun pengalamannya luar biasa. Mulai dari warna hijau tosca di Pianemo, snorkeling di Sawendarek, hingga warna-warna terumbu karang yang menenangkan di Yenbuba dan Pasir Timbul.”",
+      },
+    ],
+  },
+] as const;
+
+export const menarikWisatawanEnglish = [
+  {
+    title: "Attracts Many Travelers From Around the World",
+    description:
+      "Raja Ampat offers an extraordinary experience for travelers with its rich coral reefs and spectacular marine life.",
+    attractions: [
+      {
+        id: 1,
+        name: "Piaynemo",
+        rating: 4.9,
+        image: "/piaynemo-image.jpg",
+      },
+      {
+        id: 2,
+        name: "Wayag Island",
+        rating: 4.8,
+        image: "/pulau-wayag-image.jpg",
+      },
+      {
+        id: 3,
+        name: "Misool Island",
+        rating: 4.7,
+        image: "/pulau-misool-image.jpg",
+      },
+      {
+        id: 4,
+        name: "Cape Kri",
+        rating: 4.7,
+        image: "/cape-kri-image.jpg",
+      },
     ],
     reviews: [
       {
         name: "Hari Setiyawan",
         from: "Makassar, Indonesia",
-        comment: "“The underwater beauty of Raja Ampat is hard to describe in words. Although it's only a one-day trip with Misool Trip, the experience is incredible. From the tosca green at Pianemo, snorkeling at Sawendarek, to the calming colors of the coral reefs at Yenbuba and Pasir Timbul.”",
-
+        comment:
+          "“The underwater beauty of Raja Ampat is hard to describe in words. Although it's only a one-day trip with Misool Trip, the experience is incredible. From the tosca green at Pianemo, snorkeling at Sawendarek, to the calming colors of the coral reefs at Yenbuba and Pasir Timbul.”",
       },
     ],
   },
-  
 ] as const;
 
 export const CTAIndonesia = [
   {
     title: "Siap untuk Berpetualang?",
-    description: "Jelajahi keindahan Raja Ampat dan temukan pengalaman tak terlupakan. Mulai petualanganmu sekarang!",
+    description:
+      "Jelajahi keindahan Raja Ampat dan temukan pengalaman tak terlupakan. Mulai petualanganmu sekarang!",
   },
 ] as const;
 
 export const CTAEnglish = [
   {
     title: "Ready to Travel?",
-    description: "Explore the beauty of Raja Ampat and find your next adventure. Start your journey now!",
+    description:
+      "Explore the beauty of Raja Ampat and find your next adventure. Start your journey now!",
   },
 ] as const;
 
 export const FooterIndonesia = [
   {
     title: "Revealings",
-    description: "Petualangan Dimulai dari Sini. Mengungkap Keindahan Tersembunyi Indonesia", 
+    description:
+      "Petualangan Dimulai dari Sini. Mengungkap Keindahan Tersembunyi Indonesia",
     copyright: "© Revealings2024. All rights reserved.",
 
     navigation: {
-      title: "Navigasi",  
-      links: [  
+      title: "Navigasi",
+      links: [
         {
           id: 1,
           name: "Beranda",
@@ -347,11 +365,11 @@ export const FooterIndonesia = [
           id: 4,
           name: "Ulasan",
           href: "#rating",
-        }
+        },
       ],
     },
 
-    license: {  
+    license: {
       title: "Lisensi",
       linksLicense: [
         {
@@ -365,11 +383,11 @@ export const FooterIndonesia = [
         {
           id: 3,
           name: "Alamat Email",
-        }
-      ]
+        },
+      ],
     },
 
-    social: {  
+    social: {
       title: "Sosial Media",
       links: [
         {
@@ -389,25 +407,24 @@ export const FooterIndonesia = [
         },
         {
           id: 4,
-          name: "Github", 
+          name: "Github",
           href: "https://github.com/",
-        }
-      ]
-    }
-  }
+        },
+      ],
+    },
+  },
 ] as const;
-
-
 
 export const FooterEnglish = [
   {
     title: "Revealings",
-    description: "Starting from Here. Discovering the Hidden Beauty of Indonesia",
+    description:
+      "Starting from Here. Discovering the Hidden Beauty of Indonesia",
     copyright: "© Revealings2024. All rights reserved.",
-   
+
     navigation: {
-      title: "Navigation",  
-      links: [  
+      title: "Navigation",
+      links: [
         {
           id: 1,
           name: "Home",
@@ -427,11 +444,11 @@ export const FooterEnglish = [
           id: 4,
           name: "Reviews",
           href: "#rating",
-        }
+        },
       ],
     },
 
-    license: {  
+    license: {
       title: "Lisensi",
       linksLicense: [
         {
@@ -445,11 +462,11 @@ export const FooterEnglish = [
         {
           id: 3,
           name: "Email Address",
-        }
-      ]
+        },
+      ],
     },
 
-    social: {  
+    social: {
       title: "Sosial Media",
       links: [
         {
@@ -469,10 +486,10 @@ export const FooterEnglish = [
         },
         {
           id: 4,
-          name: "Github", 
+          name: "Github",
           href: "https://github.com/",
-        }
-      ]
-    }
-  }
+        },
+      ],
+    },
+  },
 ] as const;

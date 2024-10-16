@@ -13,9 +13,12 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { toast } from "sonner";
 import { useLenis } from "@studio-freight/react-lenis";
+import { useLanguageStore } from "@/store/language";
 
 export default function Navbar({ className }: { className?: string }) {
   const { isScrolled, setIsScrolled } = useNavbarStore();
+  const { language, setLanguage } = useLanguageStore();
+
   const lang = localStorage.getItem("language");
   if (!lang) {
     localStorage.setItem("language", "id");
@@ -25,7 +28,6 @@ export default function Navbar({ className }: { className?: string }) {
 
   const lenis = useLenis();
 
-  const [language, setLanguage] = useState(lang);
   const [isOpen, setIsOpen] = useState(false);
 
   const navlink = language === "id" ? navLinksIndonesia : navLinksEnglish;
@@ -43,7 +45,7 @@ export default function Navbar({ className }: { className?: string }) {
       {/* Tablet To Desktop Navbar */}
       <nav
         className={cn(
-          "fixed left-0 right-0 top-0 z-[99] hidden items-center justify-between py-[16px] text-white transition-all duration-500 md:flex",
+          "fixed left-0 right-0 top-0 z-[998] hidden items-center justify-between py-[16px] text-white transition-all duration-500 md:flex",
           className,
           {
             "top-5 !max-w-[745px] rounded-full bg-white/90 py-[8px] pl-[20px] pr-[10px] text-primary shadow-md backdrop-blur-sm":
@@ -52,15 +54,20 @@ export default function Navbar({ className }: { className?: string }) {
           },
         )}
       >
-        <Button
-          variant="ghost"
-          onClick={() => lenis?.scrollTo(0, { immediate: true, force: true })}
-          className={cn("text-[20px] font-bold text-white", {
-            "text-primary": isScrolled,
-          })}
-        >
-          Revealings
-        </Button>
+        <Link href="/" onClick={() => lenis?.scrollTo(0)}>
+          <Button
+            variant="ghost"
+            className={cn(
+              "text-[20px] font-bold text-white hover:bg-transparent",
+              {
+                "text-primary hover:text-primary": isScrolled,
+                "text-white hover:text-white": !isScrolled,
+              },
+            )}
+          >
+            Revealings
+          </Button>
+        </Link>
         <ul className="flex gap-4">
           {navlink.map((link) => (
             <li key={link.id}>

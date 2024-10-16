@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${manrope.variable} font-manrope antialiased`}>
         <SmoothScroll>{children}</SmoothScroll>
-        <Toaster richColors />
+        <Toaster closeButton richColors />
       </body>
     </html>
   );

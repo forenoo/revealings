@@ -22,22 +22,22 @@ export default function CustomButton({
     <Link href={href || "/"}>
       <Button
         className={cn(
-          "rounded-full group h-auto w-auto transition-all xl:text-[16px] text-[14px] pl-[26px] flex gap-[20px] pr-[6px] py-[6px]",
+          "group flex h-auto w-auto gap-[20px] rounded-full py-[6px] pl-[26px] pr-[6px] text-[14px] transition-all xl:text-[16px]",
           className,
           {
-            "text-primary bg-white": variant === "light",
-            "text-white bg-primary": variant === "dark",
-          }
+            "bg-white text-primary": variant === "light",
+            "bg-primary text-white hover:bg-primary/90": variant === "dark",
+          },
         )}
       >
         <span className="font-medium">{children}</span>
         <div
           className={cn(
-            "bg-accent group-hover:scale-105 transition-all lg:w-[42px] lg:h-[42px] w-[32px] h-[32px] rounded-full p-[8px] flex items-center justify-center",
+            "flex h-[32px] w-[32px] items-center justify-center rounded-full p-[8px] transition-all group-hover:scale-105 lg:h-[36px] lg:w-[36px]",
             {
-              "text-white": variant === "light",
-              "text-primary": variant === "dark",
-            }
+              "bg-accent text-white": variant === "light",
+              "bg-white text-accent": variant === "dark",
+            },
           )}
         >
           {icon}
