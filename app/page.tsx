@@ -26,8 +26,8 @@ export default function Home() {
         <Rating />
         <Testimoni />
         <CallToAction />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }
