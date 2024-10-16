@@ -1,7 +1,6 @@
-import React from "react";
 import SectionTitle from "@/components/elements/section-title";
 import AboutImageCard from "@/components/elements/about-image-card";
-import Image from "next/image";
+import { aboutImageCardIndonesia } from "@/lib/constants";
 
 export default function About() {
   return (
@@ -12,11 +11,15 @@ export default function About() {
         descriptionClassName="max-w-[720px]"
       />
       <div className="grid grid-cols-3 gap-[20px]">
-        <AboutImageCard />
-        <AboutImageCard className="row-span-2" />
-        <AboutImageCard />
-        <AboutImageCard />
-        <AboutImageCard />
+        {aboutImageCardIndonesia.map((item) => (
+          <AboutImageCard
+            key={item.id}
+            image={item.image}
+            className={item.id === 2 ? "row-span-2" : ""}
+            hoverTitle={item.title}
+            hoverDescription={item.description}
+          />
+        ))}
       </div>
     </section>
   );
