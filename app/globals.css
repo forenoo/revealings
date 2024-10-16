@@ -35,10 +35,14 @@
 
 @layer utilities {
   .maxContainer {
-    @apply max-w-[1440px] mx-auto;
+    @apply mx-auto max-w-[1440px];
   }
 
   .maxPadding {
     @apply px-[20px] sm:px-[40px] lg:px-[60px];
+  }
+
+  .sectionPadding {
+    @apply pt-[40px] lg:pt-[80px];
   }
 }

@@ -23,7 +23,7 @@ export default function SectionTitle({
     >
       <h2
         className={cn(
-          "text-[24px] font-bold leading-[30px] text-primary md:text-[42px] md:leading-[50px] lg:text-[64px] lg:leading-[80px]",
+          "text-[32px] font-bold leading-[40px] text-primary md:text-[42px] md:leading-[50px] lg:text-[64px] lg:leading-[80px]",
 
           titleClassName,
         )}

@@ -23,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} font-manrope antialiased`}>
-        <Toaster />
         <SmoothScroll>{children}</SmoothScroll>
+        <Toaster richColors />
       </body>
     </html>
   );
