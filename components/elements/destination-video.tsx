@@ -17,6 +17,12 @@ export default function DestinationVideo() {
     }
   };
 
+  window.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      handleOnClose();
+    }
+  });
+
   return (
     <>
       <div
@@ -35,7 +41,7 @@ export default function DestinationVideo() {
           alt="playvideo"
           width={100}
           height={100}
-          className="absolute inset-0 m-auto transition-all duration-300 ease-in-out group-hover:scale-110"
+          className="absolute inset-0 m-auto w-[50px] transition-all duration-300 ease-in-out group-hover:scale-110 md:w-[100px]"
         />
         <div
           className={cn(
@@ -45,17 +51,17 @@ export default function DestinationVideo() {
         >
           <div
             onClick={handleOnClose}
-            className="absolute right-5 top-5 rounded-full bg-white p-3"
+            className="absolute right-5 top-5 rounded-full bg-white p-1 md:p-3"
           >
-            <X className="text-primary" />
+            <X className="size-5 text-primary" />
           </div>
           <video
             ref={videoRef}
             src="/destination-video.mp4"
             controls
-            width={1200}
+            width={1100}
             height={1000}
-            className="aspect-video rounded-[20px] object-cover"
+            className="aspect-video w-[1000px] rounded-[20px] object-cover 2xl:w-[1200px]"
           />
         </div>
       </div>

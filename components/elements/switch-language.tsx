@@ -7,14 +7,14 @@ import { cn } from "@/lib/utils";
 
 export default function SwitchLanguage({
   className,
-  language,
   onClick,
 }: {
   className?: string;
   language?: string;
   onClick?: () => void;
 }) {
-  const lang = language || localStorage.getItem("language");
+  const lang = localStorage.getItem("language");
+
   return (
     <Button
       variant="ghost"

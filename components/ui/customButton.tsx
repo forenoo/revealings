@@ -1,7 +1,10 @@
+"use client";
+
 import React from "react";
 import { Button } from "./button";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { useLenis } from "@studio-freight/react-lenis";
 
 interface CustomButtonProps {
   className?: string;
@@ -18,8 +21,21 @@ export default function CustomButton({
   icon,
   href,
 }: CustomButtonProps) {
+  const lenis = useLenis();
+
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    if (href.startsWith("#")) {
+      lenis?.scrollTo(href);
+    } else {
+      window.location.href = href;
+    }
+  };
   return (
-    <Link href={href || "/"}>
+    <Link onClick={(e) => handleClick(e, href || "/")} href={href || "/"}>
       <Button
         className={cn(
           "group flex h-auto w-auto gap-[20px] rounded-full py-[6px] pl-[26px] pr-[6px] text-[14px] transition-all xl:text-[16px]",

@@ -1,36 +1,106 @@
-import React from "react";
+"use client";
+
+import { footerIndonesia, footerEnglish } from "@/lib/constants";
+import { cn } from "@/lib/utils";
+import { useLenis } from "@studio-freight/react-lenis";
+import Link from "next/link";
+import { useLanguageStore } from "@/store/language";
 
 export default function Footer() {
-  return <footer className="border-t-[1px] mt-20 border-[#2B1D1D] border-opacity-20 flex justify-between px-10">
-    <div>
-    <h1>Revealings</h1>
-    <p>Petualangan Dimulai dari Sini. <br />
-    Mengungkap Keindahan Tersembunyi Indonesia</p>
-    <p>© Revealings 2024. All rights reserved.</p>
-    </div>
-    <div>
-      <div className="flex">
-          <div>
-            <h1>Navigasi</h1>
-            <p></p>
-            <p>Tentang</p>
-            <p>Destinasi</p>
-            <p>Ulasan</p>
+  const { language } = useLanguageStore();
+  const footer = language === "id" ? footerIndonesia : footerEnglish;
+
+  const lenis = useLenis();
+
+  const handleClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    e.preventDefault();
+    if (href.startsWith("#")) {
+      lenis?.scrollTo(href);
+    } else {
+      window.location.href = href;
+    }
+  };
+
+  return (
+    <footer className="sectionPadding">
+      <div className="border-t border-primary/20">
+        <div className="maxContainer maxPadding flex flex-col justify-between gap-y-[40px] py-[40px] md:py-[60px] lg:flex-row">
+          <div className="space-y-3 font-medium">
+            <Link
+              href="/"
+              className={cn(
+                "text-[16px] font-bold text-primary md:text-[20px] lg:text-[24px]",
+              )}
+            >
+              {footer.title}
+            </Link>
+            <p className="max-w-[400px] text-[14px] text-primary/50 md:text-[18px]">
+              {footer.description}
+            </p>
+            <p className="text-[14px] text-primary/50 md:text-[18px]">
+              {footer.copyright}
+            </p>
           </div>
-          <div>
-            <h1>Lisensi</h1>
-            <p>Kebijakan Privasi</p>
-            <p>Copyright</p>
-            <p>Alamat Email</p>
+          <div className="grid grid-cols-3 justify-between gap-[10px] lg:gap-[80px]">
+            <div className="flex flex-col gap-[10px] md:gap-[20px]">
+              <h6 className="text-[16px] font-bold text-primary md:text-[20px]">
+                {footer.navigation.title}
+              </h6>
+              <ul className="flex flex-col gap-[10px]">
+                {footer.navigation.links.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={""}
+                      onClick={(e) => handleClick(e, item.href)}
+                      className="text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100 sm:text-[16px] lg:text-[18px]"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col gap-[10px] md:gap-[20px]">
+              <h6 className="text-[16px] font-bold text-primary md:text-[20px]">
+                {footer.license.title}
+              </h6>
+              <ul className="flex flex-col gap-[10px]">
+                {footer.license.linksLicense.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={item.href}
+                      className="text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100 sm:text-[16px] lg:text-[18px]"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="flex flex-col gap-[10px] md:gap-[20px]">
+              <h6 className="text-[16px] font-bold text-primary md:text-[20px]">
+                {footer.social.title}
+              </h6>
+              <ul className="flex flex-col gap-[10px]">
+                {footer.social.links.map((item) => (
+                  <li key={item.id}>
+                    <Link
+                      href={item.href}
+                      target="_blank"
+                      className="text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100 sm:text-[16px] lg:text-[18px]"
+                    >
+                      {item.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-          <div>
-            <h1>Sosial</h1>
-            <p>X (@revealings)</p>
-            <p>Facebook</p>
-            <p>Instagram</p>
-            <p></p>
-          </div>
+        </div>
       </div>
-    </div>
-    </footer>;
+    </footer>
+  );
 }

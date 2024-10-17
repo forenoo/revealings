@@ -10,7 +10,7 @@ export default function MarqueeLogo() {
           src={`/logo${index + 1}.png`}
           alt={`logo${index + 1}`}
           width={150}
-          className="mr-[40px] opacity-50 grayscale"
+          className="mr-[20px] w-[100px] opacity-50 grayscale md:mr-[40px] md:w-[150px]"
           height={100}
         />
       ))}

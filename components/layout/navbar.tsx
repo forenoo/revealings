@@ -19,17 +19,8 @@ export default function Navbar({ className }: { className?: string }) {
   const { isScrolled, setIsScrolled } = useNavbarStore();
   const { language, setLanguage } = useLanguageStore();
 
-  const lang = localStorage.getItem("language");
-  if (!lang) {
-    localStorage.setItem("language", "id");
-  } else {
-    localStorage.getItem("language");
-  }
-
   const lenis = useLenis();
-
   const [isOpen, setIsOpen] = useState(false);
-
   const navlink = language === "id" ? navLinksIndonesia : navLinksEnglish;
 
   useEffect(() => {
@@ -37,75 +28,88 @@ export default function Navbar({ className }: { className?: string }) {
       setIsScrolled(window.scrollY > 100);
     };
 
+    const lang = localStorage.getItem("language");
+    if (!lang) {
+      localStorage.setItem("language", "id");
+    } else {
+      setLanguage(lang);
+    }
+
     window.addEventListener("scroll", handleScroll);
-  }, [setIsScrolled]);
+  }, [setLanguage, setIsScrolled]);
 
   return (
     <>
       {/* Tablet To Desktop Navbar */}
-      <nav
-        className={cn(
-          "fixed left-0 right-0 top-0 z-[998] hidden items-center justify-between py-[16px] text-white transition-all duration-500 md:flex",
-          className,
-          {
-            "top-5 !max-w-[745px] rounded-full bg-white/90 py-[8px] pl-[20px] pr-[10px] text-primary shadow-md backdrop-blur-sm":
-              isScrolled,
-            maxPadding: !isScrolled,
-          },
-        )}
+      <div
+        className={cn("fixed left-0 right-0 top-0 z-[998]", {
+          "top-5 px-5": isScrolled,
+        })}
       >
-        <Link href="/" onClick={() => lenis?.scrollTo(0)}>
-          <Button
-            variant="ghost"
-            className={cn(
-              "text-[20px] font-bold text-white hover:bg-transparent",
-              {
-                "text-primary hover:text-primary": isScrolled,
-                "text-white hover:text-white": !isScrolled,
-              },
-            )}
-          >
-            Revealings
-          </Button>
-        </Link>
-        <ul className="flex gap-4">
-          {navlink.map((link) => (
-            <li key={link.id}>
-              <NavLink
-                href={link.href}
-                className={cn({
-                  "hover:text-white": !isScrolled,
-                  "text-primary/70 hover:text-primary": isScrolled,
-                })}
-              >
-                {link.name}
-              </NavLink>
-            </li>
-          ))}
-        </ul>
-        <SwitchLanguage
-          onClick={() => {
-            setLanguage(language === "id" ? "en" : "id");
-            localStorage.setItem("language", language === "id" ? "en" : "id");
-            toast.success(
-              language === "id"
-                ? "Success changed to English"
-                : "Berhasil berganti ke Bahasa Indonesia",
-            );
-          }}
-          className={cn({
-            "bg-white text-primary hover:text-primary": isScrolled,
-          })}
-          language={language || undefined}
-        />
-      </nav>
+        <nav
+          className={cn(
+            "hidden items-center justify-between py-[16px] text-white transition-all duration-500 md:flex",
+            className,
+            {
+              "!max-w-[800px] rounded-full bg-slate-100/60 py-[8px] pl-[20px] pr-[10px] text-primary shadow-lg backdrop-blur-md":
+                isScrolled,
+              maxPadding: !isScrolled,
+            },
+          )}
+        >
+          <Link href="/" onClick={() => lenis?.scrollTo(0)}>
+            <Button
+              variant="ghost"
+              className={cn(
+                "text-[20px] font-bold text-white hover:bg-transparent",
+                {
+                  "text-primary hover:text-primary": isScrolled,
+                  "text-white hover:text-white": !isScrolled,
+                },
+              )}
+            >
+              Revealings
+            </Button>
+          </Link>
+          <ul className="flex gap-4">
+            {navlink.map((link) => (
+              <li key={link.id}>
+                <NavLink
+                  href={link.href}
+                  className={cn({
+                    "hover:text-white": !isScrolled,
+                    "font-bold text-primary hover:text-primary": isScrolled,
+                  })}
+                >
+                  {link.name}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+          <SwitchLanguage
+            onClick={() => {
+              setLanguage(language === "id" ? "en" : "id");
+              localStorage.setItem("language", language === "id" ? "en" : "id");
+              toast.success(
+                language === "id"
+                  ? "Success changed to English"
+                  : "Berhasil berganti ke Bahasa Indonesia",
+              );
+            }}
+            className={cn({
+              "bg-white text-primary hover:text-primary": isScrolled,
+            })}
+            language={language || undefined}
+          />
+        </nav>
+      </div>
       {/* Mobile Navbar */}
       <nav
         className={cn(
           "maxPadding fixed left-0 right-0 top-0 z-[99] flex items-center justify-between py-[16px] text-white transition-all duration-500 md:hidden",
           className,
           {
-            "bg-white/90 py-[8px] text-primary shadow-md": isScrolled,
+            "bg-white py-[8px] text-primary shadow-lg": isScrolled,
           },
         )}
       >
@@ -135,7 +139,7 @@ export default function Navbar({ className }: { className?: string }) {
               >
                 <Menu
                   size={32}
-                  className={cn({ "text-primary": isScrolled })}
+                  className={cn({ "text-primary duration-300": isScrolled })}
                 />
               </Button>
             </SheetTrigger>
