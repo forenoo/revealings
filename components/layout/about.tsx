@@ -32,7 +32,7 @@ export default function About() {
             <h3 className="relative z-10 text-[18px] font-bold md:text-[24px]">
               {item.title}
             </h3>
-            <p className="relative z-10 text-[14px] text-[#E0E0E0]">
+            <p className="relative z-10 text-[14px] font-medium text-[#E0E0E0]">
               {item.description}
             </p>
           </DirectionAwareHover>

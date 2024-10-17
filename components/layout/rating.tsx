@@ -44,7 +44,7 @@ export default function Rating() {
                 alt={item.name}
                 width={1000}
                 height={1000}
-                className="group-hover:scale-105W h-full max-h-[400px] w-full object-cover transition-all duration-300"
+                className="h-full max-h-[400px] w-full object-cover transition-all duration-300 group-hover:scale-105"
               />
               <div className="absolute bottom-0 left-0 right-0 z-[10] m-[16px] flex items-center justify-between rounded-[12px] border-2 border-accent/50 bg-white p-3 font-bold text-primary">
                 <h3 className="text-[14px] md:text-[16px]">{item.name}</h3>

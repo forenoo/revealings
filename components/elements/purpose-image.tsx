@@ -1,15 +1,40 @@
-import React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { imagePurpose } from "@/lib/constants";
 
 export default function PurposeImage({ className }: { className?: string }) {
   return (
-    <Image
-      src={"/purpose-image.jpg"}
-      alt="purpose-image"
-      className={cn("hidden w-auto rounded-[20px] md:flex", className)}
-      width={600}
-      height={300}
-    />
+    <Carousel
+      className="overflow-hidden rounded-[20px]"
+      plugins={[
+        Autoplay({
+          delay: 2000,
+        }),
+      ]}
+      opts={{
+        align: "start",
+        loop: true,
+      }}
+    >
+      <CarouselContent>
+        {imagePurpose.map((image, index) => (
+          <CarouselItem key={index}>
+            <Image
+              src={image}
+              alt="purpose-image"
+              className={cn("h-full w-full rounded-[20px]", className)}
+              width={600}
+              height={300}
+            />
+          </CarouselItem>
+        ))}
+      </CarouselContent>
+    </Carousel>
   );
 }

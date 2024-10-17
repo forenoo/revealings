@@ -51,7 +51,7 @@ export default function Navbar({ className }: { className?: string }) {
             "hidden items-center justify-between py-[16px] text-white transition-all duration-500 md:flex",
             className,
             {
-              "!max-w-[800px] rounded-full bg-slate-100/60 py-[8px] pl-[20px] pr-[10px] text-primary shadow-lg backdrop-blur-md":
+              "!max-w-[800px] rounded-full bg-slate-100/80 py-[8px] pl-[20px] pr-[10px] text-primary shadow-lg backdrop-blur-md":
                 isScrolled,
               maxPadding: !isScrolled,
             },
@@ -99,7 +99,7 @@ export default function Navbar({ className }: { className?: string }) {
             className={cn({
               "bg-white text-primary hover:text-primary": isScrolled,
             })}
-            language={language || undefined}
+            lang={language}
           />
         </nav>
       </div>
@@ -109,7 +109,7 @@ export default function Navbar({ className }: { className?: string }) {
           "maxPadding fixed left-0 right-0 top-0 z-[99] flex items-center justify-between py-[16px] text-white transition-all duration-500 md:hidden",
           className,
           {
-            "bg-white py-[8px] text-primary shadow-lg": isScrolled,
+            "bg-slate-100 py-[8px] text-primary shadow-lg": isScrolled,
           },
         )}
       >
@@ -128,7 +128,7 @@ export default function Navbar({ className }: { className?: string }) {
               setLanguage(language === "id" ? "en" : "id");
               localStorage.setItem("language", language === "id" ? "en" : "id");
             }}
-            language={language || undefined}
+            lang={language}
           />
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
@@ -143,7 +143,7 @@ export default function Navbar({ className }: { className?: string }) {
                 />
               </Button>
             </SheetTrigger>
-            <SheetContent className="z-[999] w-[300px] bg-white">
+            <SheetContent className="z-[999] w-[300px] bg-slate-100">
               <ul className="flex flex-col divide-y divide-primary/10">
                 {navlink.map((link) => (
                   <li key={link.id}>

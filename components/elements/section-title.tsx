@@ -1,6 +1,5 @@
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import React from "react";
+import PurposeImage from "./purpose-image";
 
 export default function SectionTitle({
   className,
@@ -33,15 +32,7 @@ export default function SectionTitle({
       >
         {title}
       </h2>
-      {additionalImage && (
-        <Image
-          src={additionalImage}
-          alt="purpose-image"
-          className="mx-auto flex rounded-[20px] md:hidden"
-          width={600}
-          height={300}
-        />
-      )}
+      {additionalImage && <PurposeImage className="flex md:hidden" />}
 
       <p
         className={cn(

@@ -39,7 +39,7 @@ export default function Purpose() {
             {language === "id" ? "Selengkapnya" : "Learn More"}
           </CustomButton>
         </div>
-        <PurposeImage />
+        <PurposeImage className="hidden md:flex" />
       </section>
     </div>
   );

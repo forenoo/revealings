@@ -3,6 +3,7 @@ import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { SmoothScroll } from "@/components/layout";
+import NextTopLoader from "nextjs-toploader";
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${manrope.variable} font-manrope antialiased`}>
+        <NextTopLoader height={3} zIndex={1000} color="#936F5F" />
         <SmoothScroll>{children}</SmoothScroll>
         <Toaster richColors />
       </body>

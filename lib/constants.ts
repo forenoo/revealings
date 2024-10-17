@@ -19,7 +19,30 @@ export const navLinksIndonesia = [
     name: "Ulasan",
     href: "#rating",
   },
-] as const;
+];
+
+export const navLinksBlogIndonesia = [
+  {
+    id: 1,
+    name: "Beranda",
+    href: "/#home",
+  },
+  {
+    id: 2,
+    name: "Tentang",
+    href: "/#about",
+  },
+  {
+    id: 3,
+    name: "Destinasi",
+    href: "/#destination",
+  },
+  {
+    id: 4,
+    name: "Ulasan",
+    href: "/#rating",
+  },
+];
 
 export const navLinksEnglish = [
   {
@@ -42,7 +65,7 @@ export const navLinksEnglish = [
     name: "Rating",
     href: "#rating",
   },
-] as const;
+];
 
 export const heroIndonesia = {
   title:
@@ -472,3 +495,16 @@ export const footerEnglish = {
     ],
   },
 };
+
+export const imagePurpose = [
+  "/image-1.jpg",
+  "/image-2.jpg",
+  "/image-3.jpg",
+  "/image-4.jpg",
+  "/image-5.jpg",
+  "/image-6.jpg",
+  "/image-7.jpg",
+  "/image-8.jpg",
+  "/image-9.jpg",
+  "/image-10.jpg",
+];
