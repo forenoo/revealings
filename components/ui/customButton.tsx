@@ -12,7 +12,6 @@ interface CustomButtonProps {
   variant: "dark" | "light";
   icon: React.ReactNode;
   href?: string;
-  target?: string;
 }
 
 export default function CustomButton({
@@ -21,7 +20,6 @@ export default function CustomButton({
   children,
   icon,
   href,
-  target,
 }: CustomButtonProps) {
   const lenis = useLenis();
 
@@ -40,7 +38,7 @@ export default function CustomButton({
     <Link
       onClick={(e) => handleClick(e, href || "/")}
       href={href || "/"}
-      target={target}
+      target="_blank"
     >
       <Button
         className={cn(

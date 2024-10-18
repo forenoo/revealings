@@ -32,7 +32,7 @@ export default function Rating() {
             >
               <div className="absolute inset-0 z-10 hidden h-full w-full items-center justify-center bg-black/50 group-hover:flex">
                 <Link href={`/details/${item.id}`}>
-                  <p className="font-medium text-white hover:underline">
+                  <p className="mb-5 font-medium text-white hover:underline">
                     {language === "id" ? "Lihat Detailnya" : "View Detail"}
                   </p>
                 </Link>

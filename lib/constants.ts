@@ -260,7 +260,8 @@ export const ratingIndonesia = {
       rating: 4.9,
       image: "/playnemo.jpg",
       details: {
-        title: "Piaynemo",
+        title:
+          "Menjelajahi Keajaiban Alam Piaynemo: Panorama yang Menakjubkan di Raja Ampat",
         description: [
           "Piaynemo di Raja Ampat, Papua, adalah sepotong surga tropis yang terkenal dengan lanskap spektakuler dan keajaiban lautnya. Destinasi ikonik ini dikenal dengan formasi karst batu kapur yang menjulang dramatis dari air biru kehijauan. Pengunjung sering mendaki jalur kayu pendek ke titik pandang, di mana mereka akan disuguhkan panorama menakjubkan berupa pulau-pulau kecil berwarna zamrud di tengah hamparan laut biru. Pemandangan ini seperti kartu pos hidup dan memberikan kesempatan foto yang tak terlupakan.",
 
@@ -276,7 +277,7 @@ export const ratingIndonesia = {
       rating: 4.8,
       image: "/wayag.jpg",
       details: {
-        title: "Pulau Wayag",
+        title: "Menjelajahi Keajaiban Alam Pulau Wayag: Mutiara Raja Ampat",
         description: [
           "Pulau Wayag, yang terletak di Kepulauan Raja Ampat, Papua, Indonesia, adalah mahakarya alam yang menakjubkan. Pulau ini terkenal dengan formasi karst berbentuk jamur yang menjulang dari perairan zamrud, menciptakan pemandangan yang hampir seperti dunia lain.",
 
@@ -292,7 +293,7 @@ export const ratingIndonesia = {
       rating: 4.7,
       image: "/misool.jpg",
       details: {
-        title: "Pulau Misool",
+        title: "Menjelajahi Keajaiban Bawah Laut Pulau Misool",
         description: [
           "Pulau Misool, yang terletak di bagian selatan Raja Ampat, adalah surga tersembunyi yang menawarkan pemandangan indah dan keajaiban bawah laut. Dikelilingi perairan biru kehijauan, pulau ini memiliki terumbu karang yang menjadi rumah bagi berbagai kehidupan laut, termasuk pari manta, hiu karang, dan ikan-ikan berwarna cerah.",
           "Selain atraksi bawah lautnya, Misool menawarkan petualangan unik seperti menjelajahi lukisan batu kuno di tebing yang berusia ribuan tahun. Pengunjung juga bisa berperahu kayak melalui hutan bakau yang tenang dan berenang di danau ubur-ubur yang aman.",
@@ -306,7 +307,8 @@ export const ratingIndonesia = {
       rating: 4.7,
       image: "/cape-kri.jpg",
       details: {
-        title: "Cape Kri",
+        title:
+          "Menjelajahi Keajaiban Bawah Laut Cape Kri: Rekor Keanekaragaman Ikan",
         description: [
           "Cape Kri, yang berada di dalam kepulauan Raja Ampat, adalah destinasi impian bagi penyelam dan pecinta alam. Tempat ini terkenal karena memegang rekor dunia untuk jumlah spesies ikan terbanyak yang terlihat dalam satu kali penyelaman, dengan lebih dari 374 spesies ditemukan dalam satu sesi.",
           "Cape Kri dapat diakses dengan perahu dari Pulau Kri dan terkenal dengan airnya yang jernih, dengan visibilitas sering melebihi 25 meter. Arus dinamis membawa air kaya nutrisi, memungkinkan pertemuan dengan spesies laut pelagis yang lebih besar.",
@@ -334,7 +336,8 @@ export const ratingEnglish = {
       rating: 4.9,
       image: "/playnemo.jpg",
       details: {
-        title: "Piaynemo",
+        title:
+          "Exploring the Natural Wonders of Piaynemo: A Stunning Panorama in Raja Ampat",
         description: [
           "Piaynemo in Raja Ampat, Papua, is a slice of tropical paradise renowned for its spectacular landscapes and marine wonders. This iconic destination is defined by limestone karst formations that rise dramatically from the vibrant turquoise waters. Visitors often climb to a scenic viewpoint via a short wooden trail, where the reward is a breathtaking panoramic vista of scattered emerald islets set against a vast expanse of blue. The view is surreal, like a living postcard, and offers some of the most memorable photo opportunities.",
 
@@ -350,7 +353,8 @@ export const ratingEnglish = {
       rating: 4.8,
       image: "/wayag.jpg",
       details: {
-        title: "Wayag Island",
+        title:
+          "Exploring the Natural Wonder of Wayag Island: Raja Ampat's Crown Jewel",
         description: [
           "Wayag Island, located in the Raja Ampat archipelago of Papua, Indonesia, is a dreamscape of nature’s artistry. This uninhabited gem stands out for its remarkable karst formations—mushroom-shaped limestone islets rising from emerald waters, creating a surreal, almost otherworldly scene. The pristine beauty of Wayag is often compared to landscapes from science fiction, with turquoise lagoons and dense jungle-covered peaks that captivate explorers and photographers alike​",
 
@@ -366,7 +370,7 @@ export const ratingEnglish = {
       rating: 4.7,
       image: "/misool.jpg",
       details: {
-        title: "Misool Island",
+        title: "Exploring the Underwater Wonders of Misool Island",
         description: [
           "Misool Island, located in the southern part of Raja Ampat, is a hidden paradise that offers both breathtaking landscapes and underwater wonders. Surrounded by turquoise waters, the island is home to vibrant coral reefs that host a stunning variety of marine life, including manta rays, reef sharks, and colorful fish. Misool is particularly known for its snorkeling and diving experiences, with some of the world's most biodiverse reefs found here",
 
@@ -382,7 +386,8 @@ export const ratingEnglish = {
       rating: 4.7,
       image: "/cape-kri.jpg",
       details: {
-        title: "Cape Kri",
+        title:
+          "Exploring the Underwater Wonders of Cape Kri: World Record for Fish Diversity",
         description: [
           "Cape Kri, nestled within the stunning archipelago of Raja Ampat, is a dream destination for divers and nature lovers alike. Renowned for holding the world record for the highest number of fish species observed on a single dive, it offers a breathtaking underwater experience with over 374 species spotted in one session. Here, vibrant coral reefs bloom alongside fascinating marine creatures like manta rays, barracudas, and schools of reef fish, creating a colorful and thriving aquatic wonderland​",
 
@@ -520,6 +525,165 @@ export const footerEnglish = {
         id: 4,
         name: "Reviews",
         href: "#rating",
+      },
+    ],
+  },
+
+  license: {
+    title: "License",
+    linksLicense: [
+      {
+        id: 1,
+        name: "Privacy Policy",
+        href: "#",
+      },
+      {
+        id: 2,
+        name: "Copyright",
+        href: "#",
+      },
+      {
+        id: 3,
+        name: "Email Address",
+        href: "#",
+      },
+    ],
+  },
+
+  social: {
+    title: "Social Media",
+    links: [
+      {
+        id: 1,
+        name: "Facebook",
+        href: "https://www.facebook.com/",
+      },
+      {
+        id: 2,
+        name: "Twitter",
+        href: "https://twitter.com/",
+      },
+      {
+        id: 3,
+        name: "Instagram",
+        href: "https://www.instagram.com/",
+      },
+      {
+        id: 4,
+        name: "Github",
+        href: "https://github.com/",
+      },
+    ],
+  },
+};
+
+export const footerNotHomePageIndonesia = {
+  title: "Revealings",
+  description:
+    "Petualangan Dimulai dari Sini. Mengungkap Keindahan Tersembunyi Indonesia",
+  copyright: "© Revealings 2024. All rights reserved.",
+
+  navigation: {
+    title: "Navigasi",
+    links: [
+      {
+        id: 1,
+        name: "Beranda",
+        href: "/#home",
+      },
+      {
+        id: 2,
+        name: "Tentang",
+        href: "/#about",
+      },
+      {
+        id: 3,
+        name: "Destinasi",
+        href: "/#destination",
+      },
+      {
+        id: 4,
+        name: "Ulasan",
+        href: "/#rating",
+      },
+    ],
+  },
+
+  license: {
+    title: "Lisensi",
+    linksLicense: [
+      {
+        id: 1,
+        name: "Kebijakan Privasi",
+        href: "#",
+      },
+      {
+        id: 2,
+        name: "Copyright",
+        href: "#",
+      },
+      {
+        id: 3,
+        name: "Alamat Email",
+        href: "#",
+      },
+    ],
+  },
+
+  social: {
+    title: "Sosial Media",
+    links: [
+      {
+        id: 1,
+        name: "Facebook",
+        href: "https://www.facebook.com/",
+      },
+      {
+        id: 2,
+        name: "Twitter",
+        href: "https://twitter.com/",
+      },
+      {
+        id: 3,
+        name: "Instagram",
+        href: "https://www.instagram.com/",
+      },
+      {
+        id: 4,
+        name: "Github",
+        href: "https://github.com/",
+      },
+    ],
+  },
+};
+
+export const footerNotHomePageEnglish = {
+  title: "Revealings",
+  description: "Starting from Here. Discovering the Hidden Beauty of Indonesia",
+  copyright: "© Revealings 2024. All rights reserved.",
+
+  navigation: {
+    title: "Navigation",
+    links: [
+      {
+        id: 1,
+        name: "Home",
+        href: "/#home",
+      },
+      {
+        id: 2,
+        name: "About",
+        href: "/#about",
+      },
+      {
+        id: 3,
+        name: "Destinations",
+        href: "/#destination",
+      },
+      {
+        id: 4,
+        name: "Reviews",
+        href: "/#rating",
       },
     ],
   },

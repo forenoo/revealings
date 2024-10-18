@@ -1,14 +1,24 @@
 "use client";
 
-import { footerIndonesia, footerEnglish } from "@/lib/constants";
+import {
+  footerIndonesia,
+  footerEnglish,
+  footerNotHomePageIndonesia,
+  footerNotHomePageEnglish,
+} from "@/lib/constants";
 import { cn } from "@/lib/utils";
 import { useLenis } from "@studio-freight/react-lenis";
 import Link from "next/link";
 import { useLanguageStore } from "@/store/language";
 
-export default function Footer() {
+export default function Footer({ homePage }: { homePage: boolean }) {
   const { language } = useLanguageStore();
-  const footer = language === "id" ? footerIndonesia : footerEnglish;
+
+  const footerNotHomePage =
+    language === "id" ? footerNotHomePageIndonesia : footerNotHomePageEnglish;
+  const footerHomePage = language === "id" ? footerIndonesia : footerEnglish;
+
+  const footer = homePage ? footerHomePage : footerNotHomePage;
 
   const lenis = useLenis();
 
