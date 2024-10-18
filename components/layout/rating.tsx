@@ -1,4 +1,3 @@
-import React from "react";
 import SectionTitle from "../elements/section-title";
 import Image from "next/image";
 import { ratingIndonesia, ratingEnglish } from "@/lib/constants";
@@ -32,11 +31,10 @@ export default function Rating() {
               className="group relative h-full max-h-[300px] min-h-[300px] w-full overflow-hidden rounded-[20px] hover:cursor-pointer md:max-h-[400px]"
             >
               <div className="absolute inset-0 z-10 hidden h-full w-full items-center justify-center bg-black/50 group-hover:flex">
-                <Link
-                  href={"/blogs/" + item.name.toLowerCase()}
-                  className="font-medium text-white hover:underline"
-                >
-                  {language === "id" ? "Lihat Detailnya" : "View Detail"}
+                <Link href={`/details/${item.id}`}>
+                  <p className="font-medium text-white hover:underline">
+                    {language === "id" ? "Lihat Detailnya" : "View Detail"}
+                  </p>
                 </Link>
               </div>
               <Image

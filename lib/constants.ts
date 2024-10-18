@@ -259,24 +259,60 @@ export const ratingIndonesia = {
       name: "Piaynemo",
       rating: 4.9,
       image: "/playnemo.jpg",
+      details: {
+        title: "Piaynemo",
+        description: [
+          "Piaynemo di Raja Ampat, Papua, adalah sepotong surga tropis yang terkenal dengan lanskap spektakuler dan keajaiban lautnya. Destinasi ikonik ini dikenal dengan formasi karst batu kapur yang menjulang dramatis dari air biru kehijauan. Pengunjung sering mendaki jalur kayu pendek ke titik pandang, di mana mereka akan disuguhkan panorama menakjubkan berupa pulau-pulau kecil berwarna zamrud di tengah hamparan laut biru. Pemandangan ini seperti kartu pos hidup dan memberikan kesempatan foto yang tak terlupakan.",
+
+          "Selain keindahan pemandangannya, Piaynemo adalah pintu gerbang menuju salah satu ekosistem laut terkaya di dunia. Berada di dalam Segitiga Terumbu Karang, perairan di sekitarnya dipenuhi kehidupan—terumbu karang, pari manta, gerombolan ikan berwarna-warni, dan kadang-kadang lumba-lumba, menjadikannya surga bagi para penyelam snorkel.",
+
+          "Petualang bisa memperpanjang perjalanan mereka ke tempat-tempat seperti Star Lagoon, permata tersembunyi yang terbentuk dari batu alami dan menambah sentuhan eksklusivitas. Budaya Papua setempat juga menambah pesona daerah ini, dengan desa-desa kecil di sekitar pulau yang memungkinkan wisatawan melihat kehidupan tradisional. Dari mendaki platform pandang, menyelam ke kebun karang, hingga berinteraksi dengan penduduk lokal, Piaynemo menawarkan pengalaman tak terlupakan dengan alam dan budaya.",
+        ],
+      },
     },
     {
       id: 2,
       name: "Pulau Wayag",
       rating: 4.8,
       image: "/wayag.jpg",
+      details: {
+        title: "Pulau Wayag",
+        description: [
+          "Pulau Wayag, yang terletak di Kepulauan Raja Ampat, Papua, Indonesia, adalah mahakarya alam yang menakjubkan. Pulau ini terkenal dengan formasi karst berbentuk jamur yang menjulang dari perairan zamrud, menciptakan pemandangan yang hampir seperti dunia lain.",
+
+          "Bagi para petualang, Wayag menawarkan berbagai pengalaman menarik. Pendakian ke Puncak Pindito memberikan pemandangan panorama kepulauan di sekitarnya—pulau-pulau yang tersebar di laut biru dan hijau yang mempesona. Meskipun pendakiannya cukup menantang, pemandangan di puncak membuat semua usaha terasa sepadan.",
+
+          "Di bawah permukaan laut, dunia bawah air Wayag juga tak kalah memikat. Airnya yang jernih memperlihatkan kebun karang yang dipenuhi kehidupan laut, termasuk hiu karang, pari manta, dan gerombolan ikan berwarna-warni. Tempat menyelam populer seperti Cathedral Rock dan Melissa’s Garden menampilkan keanekaragaman hayati luar biasa di wilayah ini.",
+        ],
+      },
     },
     {
       id: 3,
       name: "Pulau Misool",
       rating: 4.7,
       image: "/misool.jpg",
+      details: {
+        title: "Pulau Misool",
+        description: [
+          "Pulau Misool, yang terletak di bagian selatan Raja Ampat, adalah surga tersembunyi yang menawarkan pemandangan indah dan keajaiban bawah laut. Dikelilingi perairan biru kehijauan, pulau ini memiliki terumbu karang yang menjadi rumah bagi berbagai kehidupan laut, termasuk pari manta, hiu karang, dan ikan-ikan berwarna cerah.",
+          "Selain atraksi bawah lautnya, Misool menawarkan petualangan unik seperti menjelajahi lukisan batu kuno di tebing yang berusia ribuan tahun. Pengunjung juga bisa berperahu kayak melalui hutan bakau yang tenang dan berenang di danau ubur-ubur yang aman.",
+          "Dengan lokasinya yang terpencil dan infrastruktur pariwisata yang terbatas, Misool menawarkan pengalaman jauh dari keramaian, memastikan ketenangan dan kedekatan dengan alam. Wisatawan disarankan untuk merencanakan perjalanan dengan baik karena kondisi laut yang bergelombang pada bulan-bulan tertentu dapat memengaruhi operasi penyelaman.",
+        ],
+      },
     },
     {
       id: 4,
       name: "Cape Kri",
       rating: 4.7,
       image: "/cape-kri.jpg",
+      details: {
+        title: "Cape Kri",
+        description: [
+          "Cape Kri, yang berada di dalam kepulauan Raja Ampat, adalah destinasi impian bagi penyelam dan pecinta alam. Tempat ini terkenal karena memegang rekor dunia untuk jumlah spesies ikan terbanyak yang terlihat dalam satu kali penyelaman, dengan lebih dari 374 spesies ditemukan dalam satu sesi.",
+          "Cape Kri dapat diakses dengan perahu dari Pulau Kri dan terkenal dengan airnya yang jernih, dengan visibilitas sering melebihi 25 meter. Arus dinamis membawa air kaya nutrisi, memungkinkan pertemuan dengan spesies laut pelagis yang lebih besar.",
+          "Bagi yang tidak menyelam, Pulau Kri menawarkan pantai-pantai indah, kesempatan snorkeling, dan hutan tropis yang cocok untuk hiking, menciptakan pelarian sempurna ke keindahan alam.",
+        ],
+      },
     },
   ],
   reviews: {
@@ -297,24 +333,64 @@ export const ratingEnglish = {
       name: "Piaynemo",
       rating: 4.9,
       image: "/playnemo.jpg",
+      details: {
+        title: "Piaynemo",
+        description: [
+          "Piaynemo in Raja Ampat, Papua, is a slice of tropical paradise renowned for its spectacular landscapes and marine wonders. This iconic destination is defined by limestone karst formations that rise dramatically from the vibrant turquoise waters. Visitors often climb to a scenic viewpoint via a short wooden trail, where the reward is a breathtaking panoramic vista of scattered emerald islets set against a vast expanse of blue. The view is surreal, like a living postcard, and offers some of the most memorable photo opportunities.",
+
+          "Beyond its scenic beauty, Piaynemo is a gateway to one of the richest marine ecosystems in the world. Situated within the Coral Triangle, the surrounding waters teem with life—coral reefs, manta rays, colorful schools of fish, and occasional dolphins make it a snorkeler's dream. Adventure-seekers can extend their trip to nearby sites like Star Lagoon, a hidden gem shaped by natural rock formations, adding a touch of exclusivity to the experience.",
+
+          "Visitors will also find the local Papuan culture intertwined with the area’s charm. Small villages dot the surrounding islands, giving travelers a glimpse into traditional lifestyles, making the journey as enriching culturally as it is visually. Whether you are scaling the viewing platform, diving into the depths of coral gardens, or meeting friendly locals, Piaynemo offers an unforgettable encounter with both nature and heritage",
+        ],
+      },
     },
     {
       id: 2,
       name: "Wayag Island",
       rating: 4.8,
       image: "/wayag.jpg",
+      details: {
+        title: "Wayag Island",
+        description: [
+          "Wayag Island, located in the Raja Ampat archipelago of Papua, Indonesia, is a dreamscape of nature’s artistry. This uninhabited gem stands out for its remarkable karst formations—mushroom-shaped limestone islets rising from emerald waters, creating a surreal, almost otherworldly scene. The pristine beauty of Wayag is often compared to landscapes from science fiction, with turquoise lagoons and dense jungle-covered peaks that captivate explorers and photographers alike​",
+
+          "For adventurers, Wayag offers a wealth of experiences. A climb to the top of Pindito Peak rewards visitors with panoramic views of the surrounding archipelago—breathtaking islands scattered across an endless sea of vibrant blues and greens. The ascent can be challenging, but the view from the summit makes every step worth it",
+
+          "Below the surface, Wayag’s underwater world is equally mesmerizing. Crystal-clear waters reveal coral gardens bustling with marine life, including reef sharks, manta rays, and vibrant schools of fish. Popular dive spots, such as Cathedral Rock and Melissa’s Garden, showcase the incredible biodiversity of the region, making the island a diver’s paradise within the renowned Coral Triangle​",
+        ],
+      },
     },
     {
       id: 3,
       name: "Misool Island",
       rating: 4.7,
       image: "/misool.jpg",
+      details: {
+        title: "Misool Island",
+        description: [
+          "Misool Island, located in the southern part of Raja Ampat, is a hidden paradise that offers both breathtaking landscapes and underwater wonders. Surrounded by turquoise waters, the island is home to vibrant coral reefs that host a stunning variety of marine life, including manta rays, reef sharks, and colorful fish. Misool is particularly known for its snorkeling and diving experiences, with some of the world's most biodiverse reefs found here",
+
+          "Beyond the marine attractions, Misool offers unique adventures like exploring ancient rock paintings on cliffs that date back thousands of years. Visitors can also kayak through tranquil mangrove forests and swim in a jellyfish lake, where the harmless creatures glide serenely around you",
+
+          "With its remote location and limited tourism infrastructure, Misool provides an off-the-beaten-path experience, ensuring tranquility and close encounters with nature. Travelers are encouraged to plan carefully, as certain months bring rough seas and diving operations may pause. If you're seeking an unforgettable blend of relaxation, adventure, and natural beauty, Misool is a destination you won't want to miss",
+        ],
+      },
     },
     {
       id: 4,
       name: "Cape Kri",
       rating: 4.7,
       image: "/cape-kri.jpg",
+      details: {
+        title: "Cape Kri",
+        description: [
+          "Cape Kri, nestled within the stunning archipelago of Raja Ampat, is a dream destination for divers and nature lovers alike. Renowned for holding the world record for the highest number of fish species observed on a single dive, it offers a breathtaking underwater experience with over 374 species spotted in one session. Here, vibrant coral reefs bloom alongside fascinating marine creatures like manta rays, barracudas, and schools of reef fish, creating a colorful and thriving aquatic wonderland​",
+
+          "Accessible from Kri Island by boat, Cape Kri is known for its clear waters, with visibility often exceeding 25 meters (82 feet). Adventurous divers will also appreciate the dynamic currents that bring nutrient-rich waters, making it ideal for encounters with larger pelagic species​. For non-divers, Kri Island offers pristine beaches, opportunities for snorkeling, and lush jungles perfect for hiking, providing a well-rounded escape into nature’s beauty​",
+
+          "Whether you're exploring the shallow coral gardens or diving deep along the reef's slope, Cape Kri promises an unforgettable journey into one of the most biodiverse marine ecosystems on the planet​.​",
+        ],
+      },
     },
   ],
   reviews: {

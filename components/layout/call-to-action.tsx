@@ -23,6 +23,7 @@ export default function CallToAction() {
 
         <CustomButton
           variant="light"
+          href="https://maps.app.goo.gl/PXYrXQWDJFpMWe1M8"
           icon={<ArrowUpRight />}
           className="relative z-10 mt-4 lg:mt-0"
         >

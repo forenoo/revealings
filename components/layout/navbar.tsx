@@ -42,8 +42,8 @@ export default function Navbar({ className }: { className?: string }) {
     <>
       {/* Tablet To Desktop Navbar */}
       <div
-        className={cn("fixed left-0 right-0 top-0 z-[998]", {
-          "top-5 px-5": isScrolled,
+        className={cn("fixed left-0 right-0 top-0 z-[999]", {
+          "top-5 z-[999] px-5": isScrolled,
         })}
       >
         <nav
