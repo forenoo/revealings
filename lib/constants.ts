@@ -317,12 +317,26 @@ export const ratingIndonesia = {
       },
     },
   ],
-  reviews: {
-    name: "Symasul Sampara",
-    from: "Makassar, Indonesia",
-    comment:
-      "“Keindahan bawah laut Raja Ampat sulit digambarkan dengan kata-kata. Meskipun hanya satu hari perjalanan dengan Misool Trip, namun pengalamannya luar biasa. Mulai dari warna hijau tosca di Pianemo, snorkeling di Sawendarek, hingga warna-warna terumbu karang yang menenangkan di Yenbuba dan Pasir Timbul.”",
-  },
+  reviews: [
+    {
+      name: "Symasul Sampara",
+      from: "Makassar, Indonesia",
+      comment:
+        "“Keindahan bawah laut Raja Ampat sulit digambarkan dengan kata-kata. Meskipun hanya satu hari perjalanan dengan Misool Trip, namun pengalamannya luar biasa. Mulai dari warna hijau tosca di Pianemo, snorkeling di Sawendarek, hingga warna-warna terumbu karang yang menenangkan di Yenbuba dan Pasir Timbul.”",
+    },
+    {
+      name: "Dian Koernia",
+      from: "Solo, Indonesia",
+      comment:
+        "“Betul bahwa Tuhan menciptakan Indonesia sambil tersenyum. Semuanya indah. Better ke Misool, airnya bersih (hijau dan biru), udaranya bersih, pantainya bersih, pemandangan super indah. Siapkan fisik karena harus mendaki dan berenang.”",
+    },
+    {
+      name: "Dr. Hendra Yaputra",
+      from: "Depok, Indonesia",
+      comment:
+        "“Bila anda pecinta alam sejati, maka inilah tempatnya. Pantai berpasir putih, air yang jernih, terumbu karang yang beraneka rupa dan segala macam jenis ikan ada disini. Silahkan snorkling ataupun diving untuk menikmatinya.”",
+    },
+  ],
 };
 
 export const ratingEnglish = {
@@ -398,24 +412,38 @@ export const ratingEnglish = {
       },
     },
   ],
-  reviews: {
-    name: "Symasul Sampara",
-    from: "Makassar, Indonesia",
-    comment:
-      "“The underwater beauty of Raja Ampat is hard to describe in words. Although it's only a one-day trip with Misool Trip, the experience is incredible. From the tosca green at Pianemo, snorkeling at Sawendarek, to the calming colors of the coral reefs at Yenbuba and Pasir Timbul.”",
-  },
+  reviews: [
+    {
+      name: "Symasul Sampara",
+      from: "Makassar, Indonesia",
+      comment:
+        "“The underwater beauty of Raja Ampat is hard to describe in words. Although it's only a one-day trip with Misool Trip, the experience is incredible. From the tosca green at Pianemo, snorkeling at Sawendarek, to the calming colors of the coral reefs at Yenbuba and Pasir Timbul.”",
+    },
+    {
+      name: "Dian Koernia",
+      from: "Solo, Indonesia",
+      comment:
+        "“It's true that God smiles as He creates Indonesia. Everything is beautiful. Better to Misool, the water is clean (green and blue), the air is clean, the beach is clean, the view is super beautiful. Prepare your body because you have to climb and swim.”",
+    },
+    {
+      name: "Dr. Hendra Yaputra",
+      from: "Depok, Indonesia",
+      comment:
+        "“If you are a true nature lover, this is the place. The beach is white, the water is clean (green and blue), the air is clean, the beach is clean, the view is super beautiful. Prepare your body because you have to climb and swim.”",
+    },
+  ],
 };
 
 export const CTAIndonesia = {
   title: "Siap untuk Berpetualang?",
   description:
-    "Jelajahi keindahan Raja Ampat dan temukan pengalaman tak terlupakan. Mulai petualanganmu sekarang!",
+    "Jelajahi lokasi keindahan Raja Ampat dan temukan pengalaman tak terlupakan. Mulai petualanganmu sekarang!",
 };
 
 export const CTAEnglish = {
   title: "Ready to Travel?",
   description:
-    "Explore the beauty of Raja Ampat and find your next adventure. Start your journey now!",
+    "Explore the location the beauty of Raja Ampat and find your next adventure. Start your journey now!",
 };
 
 export const footerIndonesia = {

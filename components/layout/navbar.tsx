@@ -51,7 +51,7 @@ export default function Navbar({ className }: { className?: string }) {
             "hidden items-center justify-between py-[16px] text-white transition-all duration-500 md:flex",
             className,
             {
-              "!max-w-[800px] rounded-full bg-slate-100/80 py-[8px] pl-[20px] pr-[10px] text-primary shadow-lg backdrop-blur-md":
+              "!max-w-[800px] rounded-full bg-[#ffffff]/80 py-[8px] pl-[20px] pr-[10px] text-primary shadow-lg backdrop-blur-md":
                 isScrolled,
               maxPadding: !isScrolled,
             },

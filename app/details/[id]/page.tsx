@@ -14,7 +14,7 @@ export default function DetailsPage({ params }: { params: { id: number } }) {
 
   return (
     <>
-      <nav className="maxPadding fixed left-0 top-0 z-[990] flex w-full justify-between border-b border-b-muted-foreground/20 bg-slate-100 py-4">
+      <nav className="maxPadding fixed left-0 top-0 z-[990] flex w-full justify-between border-b border-b-muted-foreground/20 bg-[#ffffff] py-4">
         <Link
           href="/"
           className="flex items-center gap-2 text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100"

@@ -10,13 +10,13 @@ import { toast } from "sonner";
 export default function Navbar() {
   const { language, setLanguage } = useLanguageStore();
   return (
-    <nav className="maxPadding sticky left-0 top-0 z-[990] flex w-full justify-between border-b border-b-muted-foreground/20 bg-slate-100 py-4">
+    <nav className="maxPadding sticky left-0 top-0 z-[990] flex w-full justify-between border-b border-b-muted-foreground/20 bg-[#ffffff] py-4">
       <Link
         href="/"
-        className="flex items-center gap-2 text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100"
+        className="group flex items-center gap-2 text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100"
       >
         <ChevronLeft className="size-6" />
-        <p className="text-[14px] font-medium text-primary/50 transition-all duration-300 hover:text-primary/100">
+        <p className="text-[14px] font-medium text-primary/50 transition-all duration-300 group-hover:text-primary/100">
           {language === "id" ? "Kembali Ke Halaman Utama" : "Back To Home"}
         </p>
       </Link>
