@@ -22,6 +22,7 @@ export default function CallToAction() {
         />
 
         <CustomButton
+          target="_blank"
           variant="light"
           href="https://maps.app.goo.gl/PXYrXQWDJFpMWe1M8"
           icon={<ArrowUpRight />}

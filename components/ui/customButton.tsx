@@ -12,6 +12,7 @@ interface CustomButtonProps {
   variant: "dark" | "light";
   icon: React.ReactNode;
   href?: string;
+  target?: string;
 }
 
 export default function CustomButton({
@@ -20,6 +21,7 @@ export default function CustomButton({
   children,
   icon,
   href,
+  target,
 }: CustomButtonProps) {
   const lenis = useLenis();
 
@@ -35,7 +37,11 @@ export default function CustomButton({
     }
   };
   return (
-    <Link onClick={(e) => handleClick(e, href || "/")} href={href || "/"}>
+    <Link
+      onClick={(e) => handleClick(e, href || "/")}
+      href={href || "/"}
+      target={target}
+    >
       <Button
         className={cn(
           "group flex h-auto w-auto gap-[20px] rounded-full py-[6px] pl-[26px] pr-[6px] text-[14px] transition-all xl:text-[16px]",
