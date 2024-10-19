@@ -3,11 +3,36 @@
 import { cn } from "@/lib/utils";
 import { X } from "lucide-react";
 import Image from "next/image";
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 export default function DestinationVideo() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      if (isOpen) {
+        document.body.classList.add("overflow-hidden");
+      } else {
+        document.body.classList.remove("overflow-hidden");
+      }
+
+      const handleEscape = (e: KeyboardEvent) => {
+        if (e.key === "Escape") {
+          handleOnClose();
+        }
+      };
+
+      if (isOpen) {
+        window.addEventListener("keydown", handleEscape);
+      }
+
+      return () => {
+        document.body.classList.remove("overflow-hidden");
+        window.removeEventListener("keydown", handleEscape);
+      };
+    }
+  }, [isOpen]);
 
   const handleOnClose = () => {
     setIsOpen(false);
@@ -16,17 +41,6 @@ export default function DestinationVideo() {
       videoRef.current.currentTime = 0;
     }
   };
-
-  if (isOpen) {
-    window.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") {
-        handleOnClose();
-      }
-    });
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "auto";
-  }
 
   return (
     <div className="group relative max-h-[560px] max-w-[1000px] cursor-pointer rounded-[20px] shadow-lg">
