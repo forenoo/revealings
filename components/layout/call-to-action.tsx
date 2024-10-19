@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { MapPin } from "lucide-react";
 import SectionTitle from "../elements/section-title";
 import { useLanguageStore } from "@/store/language";
 import { CTAIndonesia, CTAEnglish } from "@/lib/constants";
@@ -35,7 +35,7 @@ export default function CallToAction() {
                 "flex h-[32px] w-[32px] items-center justify-center rounded-full bg-accent p-[8px] text-white transition-all group-hover:scale-105 lg:h-[36px] lg:w-[36px]"
               }
             >
-              <ArrowUpRight />
+              <MapPin />
             </div>
           </Button>
         </Link>
