@@ -1,9 +1,9 @@
-import React from "react";
-import CustomButton from "../ui/customButton";
 import { ArrowUpRight } from "lucide-react";
 import SectionTitle from "../elements/section-title";
 import { useLanguageStore } from "@/store/language";
 import { CTAIndonesia, CTAEnglish } from "@/lib/constants";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 export default function CallToAction() {
   const { language } = useLanguageStore();
@@ -21,14 +21,24 @@ export default function CallToAction() {
           descriptionClassName="text-white font-medium max-w-[670px] text-center lg:text-left"
         />
 
-        <CustomButton
-          variant="light"
-          href="https://maps.app.goo.gl/PXYrXQWDJFpMWe1M8"
-          icon={<ArrowUpRight />}
-          className="relative z-10 mt-4 lg:mt-0"
-        >
-          {language === "id" ? "Mulai Sekarang" : "Start Now"}
-        </CustomButton>
+        <Link href="https://maps.app.goo.gl/PXYrXQWDJFpMWe1M8" target="_blank">
+          <Button
+            className={
+              "group relative z-10 mt-4 flex h-auto w-auto gap-[20px] rounded-full bg-white py-[6px] pl-[26px] pr-[6px] text-[14px] text-primary transition-all lg:mt-0 xl:text-[16px]"
+            }
+          >
+            <span className="font-medium">
+              {language === "id" ? "Mulai Sekarang" : "Start Now"}
+            </span>
+            <div
+              className={
+                "flex h-[32px] w-[32px] items-center justify-center rounded-full bg-accent p-[8px] text-white transition-all group-hover:scale-105 lg:h-[36px] lg:w-[36px]"
+              }
+            >
+              <ArrowUpRight />
+            </div>
+          </Button>
+        </Link>
       </div>
     </div>
   );
