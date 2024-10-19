@@ -29,10 +29,10 @@ export default function About() {
             className={cn("h-full", index === 1 ? "row-span-2" : "")}
             key={index}
           >
-            <h3 className="relative z-10 text-[18px] font-bold md:text-[24px]">
+            <h3 className="relative z-10 text-[16px] md:text-[18px] font-bold lg:text-[24px]">
               {item.title}
             </h3>
-            <p className="relative z-10 text-[14px] font-medium text-[#E0E0E0]">
+            <p className="relative z-10 text-[12px] md:text-[14px] font-medium text-[#E0E0E0]">
               {item.description}
             </p>
           </DirectionAwareHover>
