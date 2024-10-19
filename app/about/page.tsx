@@ -56,8 +56,8 @@ export default function AboutPage() {
           </p>
           <p>
             {language === "id"
-              ? "Penduduk Kepulauan Raja Ampat umumnya adalah nelayan tradisional yang tinggal di desa-desa kecil yang tersebar di berbagai pulau. Mereka dikenal ramah dan senang menyambut tamu, terutama jika kita membawa hadiah seperti pinang atau permen. Hadiah-hadiah ini dianggap sebagai tanda persahabatan, mirip dengan &apos;pipa perdamaian&apos; di kalangan suku Indian. Percakapan sambil menikmati pinang, yang disebut &quot;Para-para Pinang,&quot; sering kali diisi dengan saling bertukar cerita lucu, yang dalam bahasa lokal disebut &quot;mob.&quot;"
-              : "The inhabitants of the Raja Ampat Islands are primarily traditional fishermen who live in small villages scattered across various islands. They are known to be friendly and welcome guests, especially if we bring gifts such as pinang or candy. These gifts are considered a symbol of friendship, similar to the &apos;peace pipe&apos; among the Indian tribes. Conversations while enjoying pinang, which are called &quot;Para-para Pinang,&quot; often include exchanging funny stories, which in local language are called &quot;mob.&quot;"}
+              ? "Penduduk Kepulauan Raja Ampat umumnya adalah nelayan tradisional yang tinggal di desa-desa kecil yang tersebar di berbagai pulau. Mereka dikenal ramah dan senang menyambut tamu, terutama jika kita membawa hadiah seperti pinang atau permen. Hadiah-hadiah ini dianggap sebagai tanda persahabatan, mirip dengan pipa perdamaian di kalangan suku Indian. Percakapan sambil menikmati pinang, yang disebut Para-para Pinang, sering kali diisi dengan saling bertukar cerita lucu, yang dalam bahasa lokal disebut mob."
+              : "The inhabitants of the Raja Ampat Islands are primarily traditional fishermen who live in small villages scattered across various islands. They are known to be friendly and welcome guests, especially if we bring gifts such as pinang or candy. These gifts are considered a symbol of friendship, similar to the peace pipe among the Indian tribes. Conversations while enjoying pinang, which are called Para-para Pinang, often include exchanging funny stories, which in local language are called mob."}
           </p>
           <p>
             {language === "id"
@@ -83,8 +83,8 @@ export default function AboutPage() {
           </p>
           <p>
             {language === "id"
-              ? "Secara etnis, mayoritas penduduk Raja Ampat berasal dari suku Ma&apos;ya, Amber, Moi, Efpan, dan Biak, yang diperkirakan telah menetap di wilayah ini sebelum abad ke-15. Suku Ma&apos;ya sendiri terbagi menjadi tiga sub-suku, yaitu suku Kawei (dari Selpele dan Salyo di Waigeo Barat), suku Wauyai (berasal dari Waigeo Selatan), dan suku Laganyan (dari Yefnu dan Lopintol)."
-              : "Ethnically, most of the inhabitants of Raja Ampat are from the Ma&apos;ya, Amber, Moi, Efpan, and Biak tribes, which are believed to have settled in this region before the 15th century. The Ma&apos;ya tribe itself is divided into three sub-tribes: the Kawei tribe (from Selpele and Salyo in West Waigeo), the Wauyai tribe (from South Waigeo), and the Laganyan tribe (from Yefnu and Lopintol)."}
+              ? "Secara etnis, mayoritas penduduk Raja Ampat berasal dari suku Maya, Amber, Moi, Efpan, dan Biak, yang diperkirakan telah menetap di wilayah ini sebelum abad ke-15. Suku Maya sendiri terbagi menjadi tiga sub-suku, yaitu suku Kawei (dari Selpele dan Salyo di Waigeo Barat), suku Wauyai (berasal dari Waigeo Selatan), dan suku Laganyan (dari Yefnu dan Lopintol)."
+              : "Ethnically, most of the inhabitants of Raja Ampat are from the Maya, Amber, Moi, Efpan, and Biak tribes, which are believed to have settled in this region before the 15th century. The Maya tribe itself is divided into three sub-tribes: the Kawei tribe (from Selpele and Salyo in West Waigeo), the Wauyai tribe (from South Waigeo), and the Laganyan tribe (from Yefnu and Lopintol)."}
           </p>
         </div>
       </div>
