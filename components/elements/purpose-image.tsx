@@ -15,6 +15,8 @@ export default function PurposeImage({ className }: { className?: string }) {
       plugins={[
         Autoplay({
           delay: 2000,
+          stopOnInteraction: false,
+          stopOnMouseEnter: true,
         }),
       ]}
       opts={{
